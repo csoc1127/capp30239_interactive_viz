@@ -1,3 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Year of Birding in Chicago</title>
+
+    <!-- stylesheets -->
+    <link href="https://unpkg.com/maplibre-gl@5.23.0/dist/maplibre-gl.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
 <body>
     <header>
         <p class="eyebrow">Chicago eBird data | 2020 to 2024</p>
@@ -9,16 +24,31 @@
 
     <main>
         <!-- map -->
+         <div class="controls">
+    <label for="metric">Size circles by:</label>
+    <select id="metric">
+        <option value="birds">Birds counted</option>
+        <option value="species">Species reported</option>
+        <option value="checklists">Checklists submitted</option>
+    </select>
+</div>
         <div id="map"></div>
     </main>
 
     <footer>
         <p>
             Sources: <a href="https://ebird.org/">Cornell Lab of Ornithology, eBird Basic Dataset</a>.
-            Basemap and map rendering with <a href="https://maplibre.org/">MapLibre GL JS</a>.
+            Basemap: <a href="https://stadiamaps.com/">Stadia Maps</a>,
+            <a href="https://stamen.com/">Stamen Design</a> and
+            <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.
+            Map rendering with <a href="https://maplibre.org/">MapLibre GL JS</a>.
         </p>
     </footer>
 
+    <!-- javascript -->
     <script src="https://unpkg.com/maplibre-gl@5.23.0/dist/maplibre-gl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
     <script src="app.js"></script>
 </body>
+
+</html>
