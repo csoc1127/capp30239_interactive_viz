@@ -1,0 +1,35 @@
+
+body {
+    margin: 0;
+    background-color: #f8f6f0;
+    color: #293b38;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 25px 40px;
+}
+
+.eyebrow {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 12px 0;
+}
+
+.subtitle {
+    font-size: 17px;
+}
+
+#map {
+    width: 100%;
+    height: 75vh;
+}
+
+footer {
+    padding: 20px 40px;
+    font-size: 13px;
+}
